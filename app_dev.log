@@ -1,0 +1,86 @@
+INFO 2025-05-06 14:53:11,252 autoreload Watching for file changes with StatReloader
+DEBUG 2025-05-06 14:53:14,398 views Mensaje de DEBUG
+INFO 2025-05-06 14:53:14,399 views Mensaje de INFO
+WARNING 2025-05-06 14:53:14,399 views Mensaje de WARNING
+ERROR 2025-05-06 14:53:14,400 views Mensaje de ERROR
+CRITICAL 2025-05-06 14:53:14,400 views Mensaje CRITICAL
+INFO 2025-05-06 14:57:00,893 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-06 14:57:01,440 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 14:59:40,060 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-06 14:59:40,593 autoreload Watching for file changes with StatReloader
+INFO 2025-05-06 15:29:56,810 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-06 15:29:57,425 autoreload Watching for file changes with StatReloader
+INFO 2025-05-07 14:11:42,134 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-07 14:12:48,060 views Error in show_short_description: 'nB'
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 84, in show_short_description
+    result = short_description_unit(units_data, unit_type, unit)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 77, in short_description_unit
+    return {unit: data_units[unit_type][unit]['description']}
+KeyError: 'nB'
+ERROR 2025-05-07 14:12:48,061 log Internal Server Error: /V1/short-description/
+ERROR 2025-05-07 14:13:57,677 views Error in show_short_description: The data of API is not available.
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 84, in show_short_description
+    result = short_description_unit(units_data, unit_type, unit)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 75, in short_description_unit
+    raise ValueError('The data of API is not available.')
+ValueError: The data of API is not available.
+ERROR 2025-05-07 14:13:57,679 log Internal Server Error: /V1/short-description/
+INFO 2025-05-07 14:45:15,246 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/urls.py changed, reloading.
+INFO 2025-05-07 14:45:17,371 autoreload Watching for file changes with StatReloader
+INFO 2025-05-07 14:45:22,102 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-07 14:45:22,590 autoreload Watching for file changes with StatReloader
+INFO 2025-05-07 14:45:39,252 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/urls.py changed, reloading.
+INFO 2025-05-07 14:45:39,737 autoreload Watching for file changes with StatReloader
+INFO 2025-05-07 14:45:51,265 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-07 14:45:51,805 autoreload Watching for file changes with StatReloader
+INFO 2025-05-07 15:00:35,380 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-07 15:00:35,841 autoreload Watching for file changes with StatReloader
+INFO 2025-05-08 19:45:19,301 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-08 19:46:29,441 log Internal Server Error: /V1/unit-convert/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/views/decorators/http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 15, in unit_convert
+    value = float(request.GET.get('value'))
+ValueError: could not convert string to float: ''
+ERROR 2025-05-08 19:46:43,905 log Internal Server Error: /V1/unit-convert/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/views/decorators/http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 15, in unit_convert
+    value = float(request.GET.get('value'))
+ValueError: could not convert string to float: 'hg'
+INFO 2025-05-08 20:01:00,670 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-08 20:01:01,156 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-08 20:01:16,214 log Internal Server Error: /V1/unit-convert/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/views/decorators/http.py", line 64, in inner
+    return func(request, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 15, in unit_convert
+    value = float(request.GET.get('value')) # ver si aca es none el value error
+ValueError: could not convert string to float: ''
+WARNING 2025-05-08 20:01:37,003 views Error, data missing
+INFO 2025-05-08 20:05:38,628 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-08 20:05:39,121 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-08 20:05:46,442 views Error, data missing
+WARNING 2025-05-08 20:06:15,862 views Error, data missing
+ERROR 2025-05-08 20:06:30,397 views Value not float number: could not convert string to float: 'gg'
+WARNING 2025-05-08 20:06:30,399 log Bad Request: /V1/unit-convert/
+INFO 2025-05-08 20:08:29,413 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-08 20:08:29,948 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-08 20:08:44,831 views Invalid value for conversation: gg - Error: could not convert string to float: 'gg'
+WARNING 2025-05-08 20:08:44,834 log Bad Request: /V1/unit-convert/

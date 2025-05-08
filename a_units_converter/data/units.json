@@ -1,0 +1,1326 @@
+{   
+    "length": {
+        "nm": {
+            "name": "nanometer",
+            "symbol": "nm",
+            "factor": 1e-9,
+            "system": "SI",
+            "description": "A unit of length equal to one billionth of a meter. Used in nanotechnology and physics."
+        },
+        "µm": {
+            "name": "micrometer",
+            "symbol": "µm",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Also known as micron. Commonly used in biology and precision engineering."
+        },
+        "mm": {
+            "name": "millimeter",
+            "symbol": "mm",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "One thousandth of a meter. Frequently used in engineering and construction."
+        },
+        "cm": {
+            "name": "centimeter",
+            "symbol": "cm",
+            "factor": 1e-2,
+            "system": "SI",
+            "description": "One hundredth of a meter. Often used in everyday measurements and health (e.g., height)."
+        },
+        "dm": {
+            "name": "decimeter",
+            "symbol": "dm",
+            "factor": 0.1,
+            "system": "SI",
+            "description": "Rarely used unit equal to one tenth of a meter."
+        },
+        "m": {
+            "name": "meter",
+            "symbol": "m",
+            "factor": 1,
+            "system": "SI",
+            "description": "The base unit of length in the International System of Units (SI)."
+        },
+        "dam": {
+            "name": "decameter",
+            "symbol": "dam",
+            "factor": 10,
+            "system": "SI",
+            "description": "A unit equal to ten meters. Rarely used."
+        },
+        "hm": {
+            "name": "hectometer",
+            "symbol": "hm",
+            "factor": 100,
+            "system": "SI",
+            "description": "A unit equal to one hundred meters. Occasionally used for measuring distances."
+        },
+        "km": {
+            "name": "kilometer",
+            "symbol": "km",
+            "factor": 1000,
+            "system": "SI",
+            "description": "A unit of length equal to one thousand meters. Widely used in transportation and geography."
+        },
+        "thou": {
+            "name": "thou",
+            "symbol": "thou",
+            "factor": 2.54e-5,
+            "system": "Imperial/US",
+            "description": "Also known as a mil. Equal to one thousandth of an inch."
+        },
+        "in": {
+            "name": "inch",
+            "symbol": "in",
+            "factor": 0.0254,
+            "system": "Imperial/US",
+            "description": "A unit of length in the imperial system. Widely used in the United States."
+        },
+        "ft": {
+            "name": "foot",
+            "symbol": "ft",
+            "factor": 0.3048,
+            "system": "Imperial/US",
+            "description": "Equal to 12 inches. Common in architecture and everyday use in the U.S."
+        },
+        "yd": {
+            "name": "yard",
+            "symbol": "yd",
+            "factor": 0.9144,
+            "system": "Imperial/US",
+            "description": "Equal to 3 feet. Used in sports fields and U.S. land measurement."
+        },
+        "mi": {
+            "name": "mile",
+            "symbol": "mi",
+            "factor": 1609.344,
+            "system": "Imperial/US",
+            "description": "Used primarily for measuring distances in the U.S. and UK."
+        },
+        "nmi": {
+            "name": "nautical mile",
+            "symbol": "nmi",
+            "factor": 1852,
+            "system": "Maritime/Aviation",
+            "description": "Used in air and sea navigation. Defined as exactly 1852 meters."
+        },
+        "ftm": {
+            "name": "fathom",
+            "symbol": "ftm",
+            "factor": 1.8288,
+            "system": "Imperial/Maritime",
+            "description": "Used to measure depth in nautical contexts. Equal to 6 feet."
+        },
+        "Mm": {
+            "name": "megameter",
+            "symbol": "Mm",
+            "factor": 1000000,
+            "system": "SI",
+            "description": "A unit equal to one million meters. Rarely used."
+        },
+        "Gm": {
+            "name": "gigameter",
+            "symbol": "Gm",
+            "factor": 1000000000,
+            "system": "SI",
+            "description": "A unit equal to one billion meters. Used in astronomy and planetary science."
+        },"au": {
+            "name": "astronomical unit",
+            "symbol": "au",
+            "factor": 149597870700,
+            "system": "Astronomical",
+            "description": "Average distance from Earth to the Sun. Used in space science."
+        },
+        "ly": {
+            "name": "light-year",
+            "symbol": "ly",
+            "factor": 9460730472580800,
+            "system": "Astronomical",
+            "description": "Distance that light travels in one year. Common in astronomy."
+        },
+        "pc": {
+            "name": "parsec",
+            "symbol": "pc",
+            "factor": 3.08567758149137e16,
+            "system": "Astronomical",
+            "description": "Used in astronomy to express distances to stars and galaxies."
+        }
+    },
+    "temperature": {
+        "K": {
+            "name": "kelvin",
+            "symbol": "K",
+            "offset": 0,
+            "system": "SI (Base Unit)",
+            "description": "Absolute temperature scale. 0 K = absolute zero.",
+            "formulas": {
+                "to_C": "C = K - 273.15",
+                "to_F": "F = (K × 9/5) - 459.67"
+            }
+        },
+        "C": {
+            "name": "degree Celsius",
+            "symbol": "°C",
+            "offset": 273.15,
+            "system": "SI (Derived)",
+            "description": "Common scale for daily use. 0°C = water freezing point.",
+            "formulas": {
+                "to_K": "K = C + 273.15",
+                "to_F": "F = (C × 9/5) + 32"
+            }
+        },
+        "F": {
+            "name": "degree Fahrenheit",
+            "symbol": "°F",
+            "offset": 459.67,
+            "system": "Imperial/US",
+            "description": "Used primarily in the US. 32°F = water freezing point.",
+            "formulas": {
+                "to_C": "C = (F - 32) × 5/9",
+                "to_K": "K = (F + 459.67) × 5/9"
+            }
+        }
+    },  
+    "volume": {
+        "mm3": {
+            "name": "cubic millimeter",
+            "symbol": "mm³",
+            "factor": 1e-9,
+            "system": "SI",
+            "description": "A metric unit of volume equal to a cube with 1 millimeter sides. Commonly used in small-scale measurements."
+        },
+        "cm3": {
+            "name": "cubic centimeter",
+            "symbol": "cm³",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Equal to a cube with 1 centimeter sides. Often used in medicine and engineering."
+        },
+        "mL": {
+            "name": "milliliter",
+            "symbol": "mL",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Equivalent to 1 cm³. Widely used in cooking and liquid measurements."
+        },
+        "cc": {
+            "name": "cubic centimeter (alternate)",
+            "symbol": "cc",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Commonly used in medical and automotive contexts (e.g., engine displacement)."
+        },
+        "L": {
+            "name": "liter",
+            "symbol": "L",
+            "factor": 0.001,
+            "system": "SI",
+            "description": "A standard metric unit for volume. Used globally for liquids and gases."
+        },
+        "dm3": {
+            "name": "cubic decimeter",
+            "symbol": "dm³",
+            "factor": 0.001,
+            "system": "SI",
+            "description": "Equal to 1 liter. Used in scientific and industrial contexts."
+        },
+        "m3": {
+            "name": "cubic meter",
+            "symbol": "m³",
+            "factor": 1,
+            "system": "SI",
+            "description": "The base SI unit for volume. Used in construction, shipping, and large-scale measurements."
+        },
+        "km3": {
+            "name": "cubic kilometer",
+            "symbol": "km³",
+            "factor": 1000000000.0,
+            "system": "SI",
+            "description": "An enormous volume unit, used in geology or oceanography."
+        },
+        "in3": {
+            "name": "cubic inch",
+            "symbol": "in³",
+            "factor": 1.6387064e-5,
+            "system": "Imperial/US",
+            "description": "Common in engineering (e.g., engine displacement in the US)."
+        },
+        "ft3": {
+            "name": "cubic foot",
+            "symbol": "ft³",
+            "factor": 0.028316846592,
+            "system": "Imperial/US",
+            "description": "Used in refrigeration, shipping, and construction in the US."
+        },
+        "yd3": {
+            "name": "cubic yard",
+            "symbol": "yd³",
+            "factor": 0.764554857984,
+            "system": "Imperial/US",
+            "description": "Common in construction (e.g., concrete or soil measurements)."
+        },
+        "gal_us": {
+            "name": "US gallon",
+            "symbol": "gal (US)",
+            "factor": 0.003785411784,
+            "system": "US Customary",
+            "description": "Standard liquid volume in the US (e.g., fuel efficiency)."
+        },
+        "gal_uk": {
+            "name": "UK gallon",
+            "symbol": "gal (UK)",
+            "factor": 0.00454609,
+            "system": "Imperial",
+            "description": "Used in the UK and some Commonwealth countries."
+        },
+        "qt_us": {
+            "name": "US quart",
+            "symbol": "qt (US)",
+            "factor": 0.000946352946,
+            "system": "US Customary",
+            "description": "A quarter of a US gallon. Common in cooking."
+        },
+        "pt_us": {
+            "name": "US pint",
+            "symbol": "pt (US)",
+            "factor": 0.000473176473,
+            "system": "US Customary",
+            "description": "Half of a US quart. Used in beverages and recipes."
+        },
+        "cup_us": {
+            "name": "US cup",
+            "symbol": "cup (US)",
+            "factor": 0.0002365882365,
+            "system": "US Customary",
+            "description": "Common in cooking measurements (≈240 mL)."
+        },
+        "fl_oz_us": {
+            "name": "US fluid ounce",
+            "symbol": "fl oz (US)",
+            "factor": 2.95735295625e-5,
+            "system": "US Customary",
+            "description": "Used for liquids in nutrition labels and recipes."
+        },
+        "fl_oz_uk": {
+            "name": "UK fluid ounce",
+            "symbol": "fl oz (UK)",
+            "factor": 2.84130625e-5,
+            "system": "Imperial",
+            "description": "Slightly larger than the US fluid ounce (≈28.4 mL)."
+        },
+        "tbsp_us": {
+            "name": "US tablespoon",
+            "symbol": "tbsp (US)",
+            "factor": 1.478676478125e-5,
+            "system": "US Customary",
+            "description": "Approx. 14.8 mL. Used in cooking and pharmaceuticals."
+        },
+        "tsp_us": {
+            "name": "US teaspoon",
+            "symbol": "tsp (US)",
+            "factor": 4.92892159375e-6,
+            "system": "US Customary",
+            "description": "Approx. 4.93 mL. Common in recipes and medicine."
+        },
+        "bbl": {
+            "name": "barrel (petroleum)",
+            "symbol": "bbl",
+            "factor": 0.158987294928,
+            "system": "US Customary",
+            "description": "Standard for oil volume (42 US gallons ≈ 159 L)."
+        },
+        "bu_us": {
+            "name": "US bushel",
+            "symbol": "bu (US)",
+            "factor": 0.03523907,
+            "system": "US Customary",
+            "description": "Used in agriculture for dry goods (e.g., grains)."
+        }
+    },
+    "mass": {
+        "mg": {
+            "name": "milligram",
+            "symbol": "mg",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "One thousandth of a gram. Commonly used in medicine and chemistry."
+        },
+        "g": {
+            "name": "gram",
+            "symbol": "g",
+            "factor": 0.001,
+            "system": "SI",
+            "description": "Base unit of mass in the metric system (non-SI but accepted). Used in everyday measurements."
+        },
+        "kg": {
+            "name": "kilogram",
+            "symbol": "kg",
+            "factor": 1,
+            "system": "SI",
+            "description": "The base SI unit of mass. Used globally in science, engineering, and commerce."
+        },
+        "t": {
+            "name": "metric ton",
+            "symbol": "t",
+            "factor": 1000.0,
+            "system": "SI",
+            "description": "Equal to 1,000 kilograms. Used in large-scale measurements like cargo or vehicles."
+        },
+        "oz": {
+            "name": "ounce",
+            "symbol": "oz",
+            "factor": 0.028349523125,
+            "system": "Imperial/US",
+            "description": "Common in cooking and postal services (≈28.35 grams)."
+        },
+        "lb": {
+            "name": "pound",
+            "symbol": "lb",
+            "factor": 0.45359237,
+            "system": "Imperial/US",
+            "description": "Widely used in the US for body weight and groceries (≈0.45 kg)."
+        },
+        "st": {
+            "name": "stone",
+            "symbol": "st",
+            "factor": 6.35029318,
+            "system": "Imperial",
+            "description": "Used primarily in the UK and Ireland for body weight (1 st = 14 lb)."
+        },
+        "gr": {
+            "name": "grain",
+            "symbol": "gr",
+            "factor": 6.479891e-5,
+            "system": "Imperial/US",
+            "description": "Historically used in archery and ammunition (≈64.8 mg)."
+        },
+        "cwt_us": {
+            "name": "US hundredweight",
+            "symbol": "cwt (US)",
+            "factor": 45.359237,
+            "system": "US Customary",
+            "description": "Equal to 100 lb (≈45.36 kg). Used in agriculture."
+        },
+        "cwt_uk": {
+            "name": "UK hundredweight",
+            "symbol": "cwt (UK)",
+            "factor": 50.802345,
+            "system": "Imperial",
+            "description": "Equal to 112 lb (≈50.8 kg). Common in historical contexts."
+        },
+        "slug": {
+            "name": "slug",
+            "symbol": "slug",
+            "factor": 14.59390294,
+            "system": "Imperial/US",
+            "description": "A unit of mass in gravitational systems (≈14.59 kg)."
+        },
+        "u": {
+            "name": "atomic mass unit",
+            "symbol": "u",
+            "factor": 1.6605390666e-27,
+            "system": "Scientific",
+            "description": "Used in physics and chemistry to express atomic and molecular masses."
+        },
+        "Da": {
+            "name": "dalton",
+            "symbol": "Da",
+            "factor": 1.6605390666e-27,
+            "system": "Scientific",
+            "description": "Synonym for atomic mass unit (u). Common in biochemistry."
+        },
+        "ton_short": {
+            "name": "short ton",
+            "symbol": "ton (US)",
+            "factor": 907.18474,
+            "system": "US Customary",
+            "description": "Equal to 2,000 lb (≈907 kg). Used in the US for industrial measurements."
+        },
+        "ton_long": {
+            "name": "long ton",
+            "symbol": "ton (UK)",
+            "factor": 1016.0469088,
+            "system": "Imperial",
+            "description": "Equal to 2,240 lb (≈1,016 kg). Common in UK shipping and mining."
+        }
+    }, 
+    "area": {
+        "mm2": {
+            "name": "square millimeter",
+            "symbol": "mm²",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Metric unit for very small areas, used in engineering and manufacturing."
+        },
+        "cm2": {
+            "name": "square centimeter",
+            "symbol": "cm²",
+            "factor": 1e-4,
+            "system": "SI",
+            "description": "Commonly used for small surface measurements (e.g., paper size)."
+        },
+        "m2": {
+            "name": "square meter",
+            "symbol": "m²",
+            "factor": 1,
+            "system": "SI",
+            "description": "Base SI unit of area. Used in construction, real estate, and science."
+        },
+        "km2": {
+            "name": "square kilometer",
+            "symbol": "km²",
+            "factor": 1e6,
+            "system": "SI",
+            "description": "Used for large-scale measurements like cities or countries."
+        },
+        "ha": {
+            "name": "hectare",
+            "symbol": "ha",
+            "factor": 1e4,
+            "system": "SI (Accepted)",
+            "description": "Equal to 10,000 m². Common in agriculture and land measurement."
+        },
+        "in2": {
+            "name": "square inch",
+            "symbol": "in²",
+            "factor": 0.00064516,
+            "system": "Imperial/US",
+            "description": "Used in manufacturing and screen sizes (≈6.45 cm²)."
+        },
+        "ft2": {
+            "name": "square foot",
+            "symbol": "ft²",
+            "factor": 0.09290304,
+            "system": "Imperial/US",
+            "description": "Standard unit for real estate and flooring in the US (≈0.093 m²)."
+        },
+        "yd2": {
+            "name": "square yard",
+            "symbol": "yd²",
+            "factor": 0.83612736,
+            "system": "Imperial/US",
+            "description": "Used in textiles and landscaping (≈0.84 m²)."
+        },
+        "mi2": {
+            "name": "square mile",
+            "symbol": "mi²",
+            "factor": 2589988.110336,
+            "system": "Imperial/US",
+            "description": "Large area unit for cities or natural reserves (≈2.59 km²)."
+        },
+        "ac": {
+            "name": "acre",
+            "symbol": "ac",
+            "factor": 4046.8564224,
+            "system": "Imperial/US",
+            "description": "Traditional land measurement unit (≈4,047 m² or 0.4 ha)."
+        },
+        "are": {
+            "name": "are",
+            "symbol": "a",
+            "factor": 100,
+            "system": "SI (Non-standard)",
+            "description": "Equal to 100 m². Rarely used outside historical contexts."
+        },
+        "hectare": {
+            "name": "hectare",
+            "symbol": "ha",
+            "factor": 10000,
+            "system": "SI (Accepted)",
+            "description": "Standard unit for land area (equal to 100 ares or 2.47 acres)."
+        },
+        "barn": {
+            "name": "barn",
+            "symbol": "b",
+            "factor": 1e-28,
+            "system": "Scientific",
+            "description": "Extremely small unit used in nuclear physics to measure cross-sections."
+        },
+        "tsubo": {
+            "name": "tsubo",
+            "symbol": "tsubo",
+            "factor": 3.305785,
+            "system": "Japanese",
+            "description": "Traditional Japanese unit for room/land area (≈3.3 m²)."
+        },
+        "tatami": {
+            "name": "tatami",
+            "symbol": "tatami",
+            "factor": 1.62,
+            "system": "Japanese",
+            "description": "Based on traditional Japanese mat size (varies regionally)."
+        },
+        "fanega": {
+            "name": "fanega",
+            "symbol": "fanega",
+            "factor": 6430,
+            "system": "Historical",
+            "description": "Traditional Spanish land measurement (≈6,430 m² or 0.64 ha)."
+        }
+    },
+    "time": {
+        "ns": {
+            "name": "nanosecond",
+            "symbol": "ns",
+            "factor": 1e-9,
+            "system": "SI",
+            "description": "One billionth of a second. Used in computing and physics for precise timing measurements."
+        },
+        "μs": {
+            "name": "microsecond",
+            "symbol": "μs",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "One millionth of a second. Common in electronics and light measurements."
+        },
+        "ms": {
+            "name": "millisecond",
+            "symbol": "ms",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "One thousandth of a second. Used in sports timing and audio processing."
+        },
+        "s": {
+            "name": "second",
+            "symbol": "s",
+            "factor": 1,
+            "system": "SI (Base Unit)",
+            "description": "The base unit of time in the International System of Units (SI)."
+        },
+        "min": {
+            "name": "minute",
+            "symbol": "min",
+            "factor": 60,
+            "system": "Common",
+            "description": "60 seconds. Standard unit for everyday time measurement."
+        },
+        "h": {
+            "name": "hour",
+            "symbol": "h",
+            "factor": 3600,
+            "system": "Common",
+            "description": "60 minutes or 3,600 seconds. Fundamental unit for timekeeping."
+        },
+        "d": {
+            "name": "day",
+            "symbol": "d",
+            "factor": 86400,
+            "system": "Common",
+            "description": "24 hours or 86,400 seconds. Based on Earth's rotation period."
+        },
+        "week": {
+            "name": "week",
+            "symbol": "week",
+            "factor": 604800,
+            "system": "Common",
+            "description": "7 days or 604,800 seconds. Standard calendar unit."
+        },
+        "month_avg": {
+            "name": "average month",
+            "symbol": "mo (avg)",
+            "factor": 2629800,
+            "system": "Calendar",
+            "description": "Approximately 30.44 days. Used for statistical calculations."
+        },
+        "year_common": {
+            "name": "common year",
+            "symbol": "yr (common)",
+            "factor": 31536000,
+            "system": "Calendar",
+            "description": "365 days or 31,536,000 seconds. Non-leap calendar year."
+        },
+        "year_leap": {
+            "name": "leap year",
+            "symbol": "yr (leap)",
+            "factor": 31622400,
+            "system": "Calendar",
+            "description": "366 days or 31,622,400 seconds. Includes February 29."
+        },
+        "year_avg": {
+            "name": "average year",
+            "symbol": "yr (avg)",
+            "factor": 31556952,
+            "system": "Calendar",
+            "description": "Mean tropical year (365.2422 days). Used in astronomical calculations."
+        },
+        "julian_year": {
+            "name": "Julian year",
+            "symbol": "yr (Julian)",
+            "factor": 31557600,
+            "system": "Astronomical",
+            "description": "Exactly 365.25 days (31,557,600 seconds). Used in astronomy."
+        },
+        "sidereal_day": {
+            "name": "sidereal day",
+            "symbol": "day (sidereal)",
+            "factor": 86164.0905,
+            "system": "Astronomical",
+            "description": "Earth's rotation period relative to stars (≈23h 56m 4.1s)."
+        },
+        "sidereal_year": {
+            "name": "sidereal year",
+            "symbol": "yr (sidereal)",
+            "factor": 31558149.504,
+            "system": "Astronomical",
+            "description": "Earth's orbital period relative to stars (≈365.256 days)."
+        },
+        "kyr": {
+            "name": "kiloyear",
+            "symbol": "kyr",
+            "factor": 3.15576e10,
+            "system": "Scientific",
+            "description": "1,000 years (31.5576 gigaseconds). Used in geology and archaeology."
+        },
+        "Myr": {
+            "name": "megayear",
+            "symbol": "Myr",
+            "factor": 3.15576e13,
+            "system": "Scientific",
+            "description": "One million years (31.5576 teraseconds). Geological time unit."
+        },
+        "Gyr": {
+            "name": "gigayear",
+            "symbol": "Gyr",
+            "factor": 3.15576e16,
+            "system": "Scientific",
+            "description": "One billion years (31.5576 petaseconds). Cosmological time scale."
+        },
+        "fortnight": {
+            "name": "fortnight",
+            "symbol": "fortnight",
+            "factor": 1209600,
+            "system": "Traditional",
+            "description": "14 days or 1,209,600 seconds. Common in British usage."
+        },
+        "decade": {
+            "name": "decade",
+            "symbol": "decade",
+            "factor": 315360000,
+            "system": "Calendar",
+            "description": "10 years (315.36 megaseconds). Standard time period."
+        },
+        "century": {
+            "name": "century",
+            "symbol": "century",
+            "factor": 3153600000,
+            "system": "Calendar",
+            "description": "100 years (3.1536 gigaseconds). Historical measurement."
+        },
+        "millennium": {
+            "name": "millennium",
+            "symbol": "millennium",
+            "factor": 31536000000,
+            "system": "Calendar",
+            "description": "1,000 years (31.536 gigaseconds). Long-term historical period."
+        },
+        "planck_time": {
+            "name": "Planck time",
+            "symbol": "tₚ",
+            "factor": 5.391247e-44,
+            "system": "Theoretical Physics",
+            "description": "The smallest meaningful unit of time in quantum mechanics."
+        },
+        "shake": {
+            "name": "shake",
+            "symbol": "shake",
+            "factor": 1e-8,
+            "system": "Nuclear Physics",
+            "description": "10 nanoseconds. Used in nuclear chain reaction timing."
+        },
+        "jiffy_physics": {
+            "name": "jiffy (physics)",
+            "symbol": "jiffy",
+            "factor": 3e-24,
+            "system": "Theoretical Physics",
+            "description": "The time for light to travel one fermi (≈3 × 10⁻²⁴ s)."
+        },
+        "dog_year": {
+            "name": "dog year",
+            "symbol": "dog yr",
+            "factor": 220752000,
+            "system": "Popular",
+            "description": "7 human years (220.752 megaseconds). Informal comparison."
+        }
+    }, 
+    "speed": {
+        "m/s": {
+            "name": "meter per second",
+            "symbol": "m/s",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI base unit of speed. Used in scientific and engineering contexts."
+        },
+        "km/h": {
+            "name": "kilometer per hour",
+            "symbol": "km/h",
+            "factor": 0.277778,
+            "system": "Metric",
+            "description": "Common speed unit for transportation (1 km/h ≈ 0.621 mph)."
+        },
+        "mph": {
+            "name": "mile per hour",
+            "symbol": "mph",
+            "factor": 0.44704,
+            "system": "Imperial/US",
+            "description": "Standard speed unit in the US (1 mph ≈ 1.609 km/h)."
+        },
+        "knot": {
+            "name": "knot",
+            "symbol": "kn",
+            "factor": 0.514444,
+            "system": "Nautical",
+            "description": "Nautical mile per hour. Used in maritime and aviation navigation."
+        },
+        "c": {
+            "name": "speed of light",
+            "symbol": "c",
+            "factor": 299792458,
+            "system": "Physical constant",
+            "description": "Fundamental physical constant (299,792,458 m/s in vacuum)."
+        }
+    },
+    "pressure": {
+        "Pa": {
+            "name": "pascal",
+            "symbol": "Pa",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI unit of pressure (1 N/m²). Used in meteorology and engineering."
+        },
+        "kPa": {
+            "name": "kilopascal",
+            "symbol": "kPa",
+            "factor": 1000,
+            "system": "SI",
+            "description": "Common for tire pressures and medical devices (1 kPa = 0.145 psi)."
+        },
+        "bar": {
+            "name": "bar",
+            "symbol": "bar",
+            "factor": 100000,
+            "system": "Metric",
+            "description": "Used in meteorology and scuba diving (1 bar ≈ 0.987 atm)."
+        },
+        "atm": {
+            "name": "standard atmosphere",
+            "symbol": "atm",
+            "factor": 101325,
+            "system": "Physical",
+            "description": "Earth's atmospheric pressure at sea level (101.325 kPa)."
+        },
+        "psi": {
+            "name": "pound per square inch",
+            "symbol": "psi",
+            "factor": 6894.76,
+            "system": "Imperial/US",
+            "description": "Widely used in engineering (1 psi ≈ 6.895 kPa)."
+        },
+        "mmHg": {
+            "name": "millimeter of mercury",
+            "symbol": "mmHg",
+            "factor": 133.322,
+            "system": "Medical",
+            "description": "Blood pressure measurement unit (1 mmHg ≈ 1 Torr)."
+        }
+    },
+    "energy": {
+        "J": {
+            "name": "joule",
+            "symbol": "J",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI unit of energy (1 N·m). Fundamental in physics."
+        },
+        "kJ": {
+            "name": "kilojoule",
+            "symbol": "kJ",
+            "factor": 1000,
+            "system": "SI",
+            "description": "Common in nutrition labels and chemistry (1 kJ ≈ 0.239 kcal)."
+        },
+        "cal": {
+            "name": "calorie",
+            "symbol": "cal",
+            "factor": 4.184,
+            "system": "Non-SI",
+            "description": "Energy to heat 1g of water by 1°C (1 cal = 4.184 J)."
+        },
+        "kcal": {
+            "name": "kilocalorie",
+            "symbol": "kcal",
+            "factor": 4184,
+            "system": "Non-SI",
+            "description": "Food energy unit (1 kcal = 1 Cal = 4.184 kJ)."
+        },
+        "kWh": {
+            "name": "kilowatt-hour",
+            "symbol": "kWh",
+            "factor": 3600000,
+            "system": "Non-SI",
+            "description": "Electricity billing unit (1 kWh = 3.6 MJ)."
+        },
+        "eV": {
+            "name": "electronvolt",
+            "symbol": "eV",
+            "factor": 1.60218e-19,
+            "system": "Physics",
+            "description": "Energy gained by an electron in 1V potential (1 eV ≈ 1.602×10⁻¹⁹ J)."
+        }
+    },
+    "power": {
+        "W": {
+            "name": "watt",
+            "symbol": "W",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI unit of power (1 J/s). Used for all energy transfer rates."
+        },
+        "kW": {
+            "name": "kilowatt",
+            "symbol": "kW",
+            "factor": 1000,
+            "system": "SI",
+            "description": "Common for engine and appliance ratings (1 kW ≈ 1.341 hp)."
+        },
+        "hp": {
+            "name": "horsepower",
+            "symbol": "hp",
+            "factor": 745.7,
+            "system": "Imperial/US",
+            "description": "Mechanical power unit (1 hp ≈ 745.7 W)."
+        },
+        "BTU/h": {
+            "name": "British thermal unit per hour",
+            "symbol": "BTU/h",
+            "factor": 0.293071,
+            "system": "Imperial",
+            "description": "HVAC system rating (1 BTU/h ≈ 0.293 W)."
+        }
+    },
+    "data": {
+        "bit": {
+            "name": "bit",
+            "symbol": "bit",
+            "factor": 0.125,
+            "system": "Digital",
+            "description": "Basic unit of digital information (8 bits = 1 byte)."
+        },
+        "B": {
+            "name": "byte",
+            "symbol": "B",
+            "factor": 1,
+            "system": "Digital",
+            "description": "Standard data unit (1 B = 8 bits)."
+        },
+        "KB": {
+            "name": "kilobyte (decimal)",
+            "symbol": "KB",
+            "factor": 1000,
+            "system": "Decimal (SI)",
+            "description": "Storage marketing unit (1000 bytes). Differs from KiB (1024 bytes)."
+            },
+        "MB": {
+            "name": "megabyte (decimal)",
+            "symbol": "MB",
+            "factor": 1000000,
+            "system": "Decimal (SI)",
+            "description": "Common file size unit (1 MB = 1,000,000 bytes). Used for storage devices."
+        },
+        "GB": {
+            "name": "gigabyte (decimal)",
+            "symbol": "GB",
+            "factor": 1000000000,
+            "system": "Decimal (SI)",
+            "description": "Storage capacity standard (1 GB = 1 billion bytes). Example: HDDs, SSDs."
+        },
+        "TB": {
+            "name": "terabyte (decimal)",
+            "symbol": "TB",
+            "factor": 1000000000000,
+            "system": "Decimal (SI)",
+            "description": "Large-scale storage (1 TB = 10¹² bytes ≈ 1000 GB). Used for cloud storage."
+        },
+        "KiB": {
+            "name": "kibibyte",
+            "symbol": "KiB",
+            "factor": 1024,
+            "system": "Binary (IEC)",
+            "description": "Actual OS measurement (1 KiB = 1024 bytes). Windows incorrectly calls this 'KB'."
+        },
+        "MiB": {
+            "name": "mebibyte",
+            "symbol": "MiB",
+            "factor": 1048576,
+            "system": "Binary (IEC)",
+            "description": "Real memory unit (1 MiB = 1024 KiB). Used by Linux/macOS for accuracy."
+        },
+        "GiB": {
+            "name": "gibibyte",
+            "symbol": "GiB",
+            "factor": 1073741824,
+            "system": "Binary (IEC)",
+            "description": "Actual RAM/storage unit (1 GiB = 1024 MiB). Often mislabeled as 'GB'."
+        },
+        "TiB": {
+            "name": "tebibyte",
+            "symbol": "TiB",
+            "factor": 1099511627776,
+            "system": "Binary (IEC)",
+            "description": "Precise large-scale unit (1 TiB = 1024 GiB ≈ 1.1 TB). Used in filesystems."
+        },
+        "PB": {
+            "name": "petabyte (decimal)",
+            "symbol": "PB",
+            "factor": 1000000000000000,
+            "system": "Digital",
+            "description": "Enterprise/Big Data (1 PB = 10¹⁵ bytes). Example: Data center capacity."
+        },
+        "EB": {
+            "name": "exabyte (decimal)",
+            "symbol": "EB",
+            "factor": 1000000000000000000,
+            "system": "Digital",
+            "description": "Global data scale (1 EB = 10¹⁸ bytes). Example: Annual internet traffic."
+        },
+        "ZB": {
+            "name": "zettabyte (decimal)",
+            "symbol": "ZB",
+            "factor": 1000000000000000000000,
+            "system": "Digital",
+            "description": "Future data volumes (1 ZB = 10²¹ bytes). Theoretical for now."
+        },
+        "YB": {
+            "name": "yottabyte (decimal)",
+            "symbol": "YB",
+            "factor": 1000000000000000000000000,
+            "system": "Digital",
+            "description": "Extreme-scale data (1 YB = 10²⁴ bytes). Currently hypothetical."
+        }
+    },
+    "substance": {
+        "mol": {
+            "name": "mole",
+            "symbol": "mol",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI base unit for amount of substance (6.022×10²³ entities)."
+        },
+        "mmol": {
+            "name": "millimole",
+            "symbol": "mmol",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "Common in chemistry (1 mmol = 10⁻³ mol)."
+        },
+        "μmol": {
+            "name": "micromole",
+            "symbol": "μmol",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Used in biochemistry (1 μmol = 10⁻⁶ mol)."
+        },
+        "nmol": {
+            "name": "nanomole",
+            "symbol": "nmol",
+            "factor": 1e-9,
+            "system": "SI",
+            "description": "Trace chemical measurements (1 nmol = 10⁻⁹ mol)."
+        },
+        "pmol": {
+            "name": "picomole",
+            "symbol": "pmol",
+            "factor": 1e-12,
+            "system": "SI",
+            "description": "Ultra-trace analysis (1 pmol = 10⁻¹² mol)."
+        },
+        "atom": {
+            "name": "atom count",
+            "symbol": "atom",
+            "factor": 1.6605390666e-24,
+            "system": "Physical",
+            "description": "1 atom = 1/Dalton ≈ 1.661×10⁻²⁴ mol."
+        },
+        "molecule": {
+            "name": "molecule count",
+            "symbol": "molecule",
+            "factor": 1.6605390666e-24,
+            "system": "Physical",
+            "description": "1 molecule = 1/Dalton ≈ 1.661×10⁻²⁴ mol."
+        },
+        "lb-mol": {
+            "name": "pound-mole",
+            "symbol": "lb-mol",
+            "factor": 453.59237,
+            "system": "US Engineering",
+            "description": "Industrial chemistry unit (1 lb-mol ≈ 453.6 mol)."
+        }
+    },
+    "concentration": {
+        "M": {
+            "name": "molar",
+            "symbol": "M",
+            "factor": 1,
+            "system": "Chemistry",
+            "description": "1 mole per liter. Standard concentration unit."
+        },
+        "mM": {
+            "name": "millimolar",
+            "symbol": "mM",
+            "factor": 1e-3,
+            "system": "Chemistry",
+            "description": "Common in biology (1 mM = 10⁻³ M)."
+        },
+        "μM": {
+            "name": "micromolar",
+            "symbol": "μM",
+            "factor": 1e-6,
+            "system": "Chemistry",
+            "description": "Used for dilute solutions (1 μM = 10⁻⁶ M)."
+        },
+        "nM": {
+            "name": "nanomolar",
+            "symbol": "nM",
+            "factor": 1e-9,
+            "system": "Chemistry",
+            "description": "Trace concentration (1 nM = 10⁻⁹ M)."
+        },
+        "mol/L": {
+            "name": "mole per liter",
+            "symbol": "mol/L",
+            "factor": 1,
+            "system": "Chemistry",
+            "description": "Synonym for molarity (M)."
+        },
+        "mol/m3": {
+            "name": "mole per cubic meter",
+            "symbol": "mol/m³",
+            "factor": 1e3,
+            "system": "SI",
+            "description": "SI unit for amount concentration (1000 mol/m³ = 1 M)."
+        },
+        "%w/v": {
+            "name": "weight per volume percent",
+            "symbol": "% w/v",
+            "factor": 10.0,
+            "system": "Practical",
+            "description": "Mass concentration (1% w/v = 10 g/L)."
+        }
+    },
+    "electric_current": {
+        "A": {
+            "name": "ampere",
+            "symbol": "A",
+            "factor": 1,
+            "system": "SI (Base Unit)",
+            "description": "SI base unit of electric current."
+        },
+        "mA": {
+            "name": "milliampere",
+            "symbol": "mA",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "Common in electronics (1 mA = 10⁻³ A)."
+        },
+        "μA": {
+            "name": "microampere",
+            "symbol": "μA",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Used for small currents (1 μA = 10⁻⁶ A)."
+        },
+        "kA": {
+            "name": "kiloampere",
+            "symbol": "kA",
+            "factor": 1e3,
+            "system": "SI",
+            "description": "Industrial currents (1 kA = 1000 A)."
+        }
+    },
+    "voltage": {
+        "V": {
+            "name": "volt",
+            "symbol": "V",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI derived unit of electric potential."
+        },
+        "mV": {
+            "name": "millivolt",
+            "symbol": "mV",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "Used in physiology (1 mV = 10⁻³ V)."
+        },
+        "kV": {
+            "name": "kilovolt",
+            "symbol": "kV",
+            "factor": 1e3,
+            "system": "SI",
+            "description": "Power transmission (1 kV = 1000 V)."
+        },
+        "MV": {
+            "name": "megavolt",
+            "symbol": "MV",
+            "factor": 1e6,
+            "system": "SI",
+            "description": "High-energy physics (1 MV = 10⁶ V)."
+        }
+    },
+    "resistance": {
+        "Ω": {
+            "name": "ohm",
+            "symbol": "Ω",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI derived unit of electrical resistance."
+        },
+        "mΩ": {
+            "name": "milliohm",
+            "symbol": "mΩ",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "Low-resistance measurements (1 mΩ = 10⁻³ Ω)."
+        },
+        "kΩ": {
+            "name": "kiloohm",
+            "symbol": "kΩ",
+            "factor": 1e3,
+            "system": "SI",
+            "description": "Common in electronics (1 kΩ = 1000 Ω)."
+        },
+        "MΩ": {
+            "name": "megaohm",
+            "symbol": "MΩ",
+            "factor": 1e6,
+            "system": "SI",
+            "description": "Insulation resistance (1 MΩ = 10⁶ Ω)."
+        }
+    },
+    "capacitance": {
+        "F": {
+            "name": "farad",
+            "symbol": "F",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI derived unit of capacitance."
+        },
+        "μF": {
+            "name": "microfarad",
+            "symbol": "μF",
+            "factor": 1e-6,
+            "system": "SI",
+            "description": "Common in circuits (1 μF = 10⁻⁶ F)."
+        },
+        "nF": {
+            "name": "nanofarad",
+            "symbol": "nF",
+            "factor": 1e-9,
+            "system": "SI",
+            "description": "Small capacitors (1 nF = 10⁻⁹ F)."
+        },
+        "pF": {
+            "name": "picofarad",
+            "symbol": "pF",
+            "factor": 1e-12,
+            "system": "SI",
+            "description": "High-frequency circuits (1 pF = 10⁻¹² F)."
+        }
+    },
+    "radioactivity": {
+        "Bq": {
+            "name": "becquerel",
+            "symbol": "Bq",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI unit of radioactivity (1 decay per second)."
+        },
+        "kBq": {
+            "name": "kilobecquerel",
+            "symbol": "kBq",
+            "factor": 1e3,
+            "system": "SI",
+            "description": "Low-level radioactivity (1 kBq = 1000 Bq)."
+        },
+        "MBq": {
+            "name": "megabecquerel",
+            "symbol": "MBq",
+            "factor": 1e6,
+            "system": "SI",
+            "description": "Medical imaging (1 MBq = 10⁶ Bq)."
+        },
+        "Ci": {
+            "name": "curie",
+            "symbol": "Ci",
+            "factor": 3.7e10,
+            "system": "Non-SI",
+            "description": "Traditional unit (1 Ci = 3.7×10¹⁰ Bq)."
+        },
+        "mCi": {
+            "name": "millicurie",
+            "symbol": "mCi",
+            "factor": 3.7e7,
+            "system": "Non-SI",
+            "description": "Nuclear medicine (1 mCi = 3.7×10⁷ Bq)."
+        },
+        "μCi": {
+            "name": "microcurie",
+            "symbol": "μCi",
+            "factor": 3.7e4,
+            "system": "Non-SI",
+            "description": "Tracer studies (1 μCi = 3.7×10⁴ Bq)."
+        }
+    },
+    "radiation_dose": {
+        "Gy": {
+            "name": "gray",
+            "symbol": "Gy",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI unit of absorbed dose (1 J/kg)."
+        },
+        "mGy": {
+            "name": "milligray",
+            "symbol": "mGy",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "Medical imaging doses (1 mGy = 10⁻³ Gy)."
+        },
+        "kGy": {
+            "name": "kilogray",
+            "symbol": "kGy",
+            "factor": 1e3,
+            "system": "SI",
+            "description": "Industrial sterilization (1 kGy = 1000 Gy)."
+        },
+        "rad": {
+            "name": "rad",
+            "symbol": "rad",
+            "factor": 0.01,
+            "system": "Non-SI",
+            "description": "Traditional unit (1 rad = 0.01 Gy)."
+        },
+        "Sv": {
+            "name": "sievert",
+            "symbol": "Sv",
+            "factor": 1,
+            "system": "SI",
+            "description": "SI unit of equivalent dose (biological impact)."
+        },
+        "mSv": {
+            "name": "millisievert",
+            "symbol": "mSv",
+            "factor": 1e-3,
+            "system": "SI",
+            "description": "Medical diagnostics (1 mSv = 10⁻³ Sv)."
+        },
+        "rem": {
+            "name": "rem",
+            "symbol": "rem",
+            "factor": 0.01,
+            "system": "Non-SI",
+            "description": "Traditional unit (1 rem = 0.01 Sv)."
+        }
+    }
+}
+
