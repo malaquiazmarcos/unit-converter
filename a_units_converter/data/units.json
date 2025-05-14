@@ -7,7 +7,7 @@
             "system": "SI",
             "description": "A unit of length equal to one billionth of a meter. Used in nanotechnology and physics."
         },
-        "µm": {
+        "um": {
             "name": "micrometer",
             "symbol": "µm",
             "factor": 1e-6,
@@ -1071,7 +1071,7 @@
             "system": "Chemistry",
             "description": "Common in biology (1 mM = 10⁻³ M)."
         },
-        "μM": {
+        "uM": {
             "name": "micromolar",
             "symbol": "μM",
             "factor": 1e-6,
@@ -1122,7 +1122,7 @@
             "system": "SI",
             "description": "Common in electronics (1 mA = 10⁻³ A)."
         },
-        "μA": {
+        "uA": {
             "name": "microampere",
             "symbol": "μA",
             "factor": 1e-6,
@@ -1168,28 +1168,28 @@
         }
     },
     "resistance": {
-        "Ω": {
+        "O": {
             "name": "ohm",
             "symbol": "Ω",
             "factor": 1,
             "system": "SI",
             "description": "SI derived unit of electrical resistance."
         },
-        "mΩ": {
+        "mO": {
             "name": "milliohm",
             "symbol": "mΩ",
             "factor": 1e-3,
             "system": "SI",
             "description": "Low-resistance measurements (1 mΩ = 10⁻³ Ω)."
         },
-        "kΩ": {
+        "kO": {
             "name": "kiloohm",
             "symbol": "kΩ",
             "factor": 1e3,
             "system": "SI",
             "description": "Common in electronics (1 kΩ = 1000 Ω)."
         },
-        "MΩ": {
+        "MO": {
             "name": "megaohm",
             "symbol": "MΩ",
             "factor": 1e6,
@@ -1205,7 +1205,7 @@
             "system": "SI",
             "description": "SI derived unit of capacitance."
         },
-        "μF": {
+        "uF": {
             "name": "microfarad",
             "symbol": "μF",
             "factor": 1e-6,

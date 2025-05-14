@@ -84,3 +84,52 @@ INFO 2025-05-08 20:08:29,413 autoreload /home/malaquiazmarcos/PROGRAMACION/pytho
 INFO 2025-05-08 20:08:29,948 autoreload Watching for file changes with StatReloader
 ERROR 2025-05-08 20:08:44,831 views Invalid value for conversation: gg - Error: could not convert string to float: 'gg'
 WARNING 2025-05-08 20:08:44,834 log Bad Request: /V1/unit-convert/
+INFO 2025-05-10 14:01:50,852 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-10 14:07:39,259 views Error, data missing
+WARNING 2025-05-10 14:07:39,260 log Bad Request: /V1/unit-convert/
+WARNING 2025-05-10 14:08:02,237 views Error, data missing
+WARNING 2025-05-10 14:08:02,237 log Bad Request: /V1/unit-convert/
+INFO 2025-05-10 20:03:05,810 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-10 20:03:16,576 views Error in fullname_wanted_units: 'Unit type "None" not found in available data'
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 179, in fullname_wanted_units
+    result = fullname_units_available(units_data, unit_type)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 136, in fullname_units_available
+    data_units = data_validate(data_units)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 158, in data_validate
+    raise KeyError(f'Unit type "{unit_type}" not found in available data')
+KeyError: 'Unit type "None" not found in available data'
+ERROR 2025-05-10 20:03:16,595 log Internal Server Error: /V1/full-name-units/
+INFO 2025-05-10 20:11:22,677 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-10 20:11:23,232 autoreload Watching for file changes with StatReloader
+INFO 2025-05-10 20:11:25,544 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-10 20:11:26,025 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 13:31:35,684 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-11 13:32:13,627 views Error in fullname_wanted_units: 'Unit type "daa" not found in available data'
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 179, in fullname_wanted_units
+    result = fullname_units_available(units_data, unit_type)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 136, in fullname_units_available
+    raise KeyError(f'Unit type "{unit_type}" not found in available data')
+KeyError: 'Unit type "daa" not found in available data'
+ERROR 2025-05-11 13:32:13,649 log Internal Server Error: /V1/full-name-units/
+INFO 2025-05-11 13:39:00,386 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-11 13:39:00,931 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 13:41:47,205 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-11 13:41:47,679 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 13:42:58,488 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-11 13:42:59,724 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:01:34,250 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-11 14:01:34,916 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:04:00,496 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:07:58,423 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-11 14:07:58,925 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:08:45,934 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:11:33,175 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-11 14:11:33,831 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:12:04,031 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-11 14:12:04,657 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:15:44,308 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:27:39,398 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:28:10,369 autoreload Watching for file changes with StatReloader
+INFO 2025-05-11 14:32:21,681 autoreload Watching for file changes with StatReloader

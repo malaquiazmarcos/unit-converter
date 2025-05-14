@@ -7,7 +7,7 @@ from a_units_converter.logic import *
 
 logger = logging.getLogger(__name__)
 
-with open("a_units_converter/data/units.json", "r") as data:
+with open("a_units_converter/data/units.json", "r", encoding='utf-8') as data:
     units_data = json.load(data)
 
 @require_http_methods(['GET'])
@@ -20,7 +20,8 @@ def unit_convert(request):
     if not all([value, unit_type, unit_from, unit_to]):
         logger.warning('Error, data missing')
         return JsonResponse(
-            {'error': 'Requested data missing'}
+            {'error': 'Requested data missing'},
+            status=400
         )
     
     try: 
@@ -31,7 +32,6 @@ def unit_convert(request):
             {'error': 'Value is not a valid number'}, 
             status=400
         )
-
 
     if unit_type not in units_data:
         logger.warning(f'Unit type not available: {unit_type}')
@@ -197,8 +197,9 @@ def fullname_wanted_units(request):
 
 
 # endpoint for test API
-# curl "http://127.0.0.1:8000/V1/unit-convert/?value=30&unit_type=temperature&unit_from=C&unit_to=F"
+# curl "http://127.0.0.1:8000/V1/unit-convert/?value=1&unit_type=data&unit_from=GiB&unit_to=MiB"
 # curl "http://127.0.0.1:8000/V1/all-data/"
+# curl "http://127.0.0.1:8000/V1/units-available/"
 # curl "http://127.0.0.1:8000/V1/short-description/?unit_type=data&unit=MB"
 # curl "http://127.0.0.1:8000/V1/magnitudes-available/"
 # curl "http://127.0.0.1:8000/V1/full-name-all-units/"
