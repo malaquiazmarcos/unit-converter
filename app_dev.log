@@ -133,3 +133,564 @@ INFO 2025-05-11 14:15:44,308 autoreload Watching for file changes with StatReloa
 INFO 2025-05-11 14:27:39,398 autoreload Watching for file changes with StatReloader
 INFO 2025-05-11 14:28:10,369 autoreload Watching for file changes with StatReloader
 INFO 2025-05-11 14:32:21,681 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 20:16:00,217 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 20:18:27,806 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-15 20:18:28,354 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-15 20:18:32,011 views Error in unit_convert: Expected a dictionary for data_units
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 47, in unit_convert
+    result = units_converter(value, unit_type, unit_from, unit_to, ['hola', 34])
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 85, in units_converter
+    units_data = data_validate(units_data)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 39, in data_validate
+    raise TypeError('Expected a dictionary for data_units')
+TypeError: Expected a dictionary for data_units
+ERROR 2025-05-15 20:18:32,017 log Internal Server Error: /V1/unit-convert/
+INFO 2025-05-15 20:19:16,912 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-15 20:19:17,583 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-15 20:19:21,077 views Error in unit_convert: Expected a dictionary for data_units
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 47, in unit_convert
+    result = units_converter(value, unit_type, unit_from, unit_to, ['hola', 34])
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 48, in wrapper
+    raise TypeError('Expected a dictionary for data_units')
+TypeError: Expected a dictionary for data_units
+ERROR 2025-05-15 20:19:21,080 log Internal Server Error: /V1/unit-convert/
+INFO 2025-05-15 20:19:50,947 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-15 20:19:51,631 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-15 20:19:52,583 views Error in unit_convert: Expected a dictionary for data_units
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 47, in unit_convert
+    result = units_converter(value, unit_type, unit_from, unit_to, units_data)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 48, in wrapper
+    raise TypeError('Expected a dictionary for data_units')
+TypeError: Expected a dictionary for data_units
+ERROR 2025-05-15 20:19:52,592 log Internal Server Error: /V1/unit-convert/
+INFO 2025-05-15 20:20:11,297 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-15 20:20:11,982 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 20:32:32,055 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 20:33:48,088 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-15 20:33:48,557 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-15 20:33:53,762 views Error in fullname_wanted_units: The API data is not available or empty
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 179, in fullname_wanted_units
+    result = fullname_units_available([], unit_type)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 62, in wrapper
+    raise ValueError('The API data is not available or empty')
+ValueError: The API data is not available or empty
+ERROR 2025-05-15 20:33:53,768 log Internal Server Error: /V1/full-name-units/
+INFO 2025-05-15 20:35:11,976 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-15 20:35:12,513 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 20:35:25,442 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-15 20:35:28,595 views Error in fullname_wanted_units: The API data is not available or empty
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 179, in fullname_wanted_units
+    result = fullname_units_available([], unit_type)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 62, in wrapper
+    raise ValueError('The API data is not available or empty')
+ValueError: The API data is not available or empty
+ERROR 2025-05-15 20:35:28,601 log Internal Server Error: /V1/full-name-units/
+INFO 2025-05-15 20:36:39,728 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-15 20:36:40,221 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 20:53:04,552 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-15 20:53:05,119 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 20:54:09,612 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py changed, reloading.
+INFO 2025-05-15 20:54:10,158 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 21:01:28,378 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-15 21:01:28,916 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:09:05,058 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:26:53,296 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 13:26:53,670 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 13:48:07,287 views Error in show_all_units: In order to allow non-dict objects to be serialized set the safe parameter to False.
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 82, in show_all_data
+    return JsonResponse(result, status=200)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/http/response.py", line 744, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+ERROR 2025-05-19 13:48:07,334 log Internal Server Error: /V1/all-data/
+ERROR 2025-05-19 13:48:12,626 views Error in show_all_units: In order to allow non-dict objects to be serialized set the safe parameter to False.
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 82, in show_all_data
+    return JsonResponse(result, status=200)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/http/response.py", line 744, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+ERROR 2025-05-19 13:48:12,629 log Internal Server Error: /V1/all-data/
+INFO 2025-05-19 13:48:26,002 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 13:48:26,431 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 13:48:34,840 views Error in show_all_units: In order to allow non-dict objects to be serialized set the safe parameter to False.
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 82, in show_all_data
+    return JsonResponse(result, status=200)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/http/response.py", line 744, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+ERROR 2025-05-19 13:48:34,842 log Internal Server Error: /V1/all-data/
+INFO 2025-05-19 13:50:37,238 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 13:50:37,689 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:55:54,338 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 13:55:54,737 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 13:56:42,842 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py changed, reloading.
+INFO 2025-05-19 13:56:43,358 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:01:42,443 views Error in unit_convert: Expected a dictionary for data_units
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 47, in unit_convert
+    result = units_converter(value, unit_type, unit_from, unit_to, units_data)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py", line 23, in wrapper
+    raise TypeError('Expected a dictionary for data_units')
+TypeError: Expected a dictionary for data_units
+ERROR 2025-05-19 14:01:42,444 log Internal Server Error: /V1/unit-convert/
+INFO 2025-05-19 14:18:56,867 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py changed, reloading.
+INFO 2025-05-19 14:18:57,398 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:18:59,674 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 14:19:00,194 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:19:02,814 views Error in unit_convert: Expected a dictionary for data_units
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 47, in unit_convert
+    result = units_converter(value, unit_type, unit_from, unit_to, units_data)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py", line 25, in wrapper
+    raise TypeError('Expected a dictionary for data_units')
+TypeError: Expected a dictionary for data_units
+ERROR 2025-05-19 14:19:02,816 log Internal Server Error: /V1/unit-convert/
+INFO 2025-05-19 14:22:16,421 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 14:22:17,006 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:22:41,792 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-19 14:22:42,321 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:22:47,003 views Error in unit_convert: Value must be a number
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 47, in unit_convert
+    result = units_converter(units_data, value, unit_type, unit_from, unit_to)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py", line 26, in wrapper
+    return func(units_data, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 63, in units_converter
+    raise ValueError("Value must be a number")
+ValueError: Value must be a number
+ERROR 2025-05-19 14:22:47,008 log Internal Server Error: /V1/unit-convert/
+INFO 2025-05-19 14:23:08,370 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-19 14:23:10,947 views Error in unit_convert: Value must be a number
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 47, in unit_convert
+    result = units_converter(units_data, value, unit_type, unit_from, unit_to)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py", line 26, in wrapper
+    return func(units_data, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 63, in units_converter
+    raise ValueError("Value must be a number")
+ValueError: Value must be a number
+ERROR 2025-05-19 14:23:10,950 log Internal Server Error: /V1/unit-convert/
+INFO 2025-05-19 14:24:38,423 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 14:24:39,114 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:25:50,730 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py changed, reloading.
+INFO 2025-05-19 14:25:51,255 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:33:35,975 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 14:33:36,368 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:35:37,797 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 14:35:38,233 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-19 14:38:11,801 views Unit type not available: d=temperature
+WARNING 2025-05-19 14:38:11,802 log Bad Request: /V1/unit-convert/
+INFO 2025-05-19 14:39:04,350 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 14:39:04,755 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-19 14:39:07,718 views Unit type not available: d=temperature
+WARNING 2025-05-19 14:39:07,719 log Bad Request: /V1/unit-convert/
+INFO 2025-05-19 14:53:57,869 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py changed, reloading.
+INFO 2025-05-19 14:53:58,307 autoreload Watching for file changes with StatReloader
+INFO 2025-05-21 19:59:08,190 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-21 19:59:26,792 log Forbidden (Permission denied): /V1/full-name-units/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django_ratelimit/decorators.py", line 26, in _wrapped
+    raise (import_string(cls) if isinstance(cls, str) else cls)()
+django_ratelimit.exceptions.Ratelimited
+INFO 2025-05-21 20:04:21,389 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-21 20:04:21,905 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-21 20:04:32,336 log Forbidden (Permission denied): /V1/full-name-units/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django_ratelimit/decorators.py", line 26, in _wrapped
+    raise (import_string(cls) if isinstance(cls, str) else cls)()
+django_ratelimit.exceptions.Ratelimited
+INFO 2025-05-21 20:04:51,086 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-21 20:04:58,450 log Forbidden (Permission denied): /V1/full-name-units/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django_ratelimit/decorators.py", line 26, in _wrapped
+    raise (import_string(cls) if isinstance(cls, str) else cls)()
+django_ratelimit.exceptions.Ratelimited
+INFO 2025-05-21 20:05:14,955 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-21 20:05:15,631 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-21 20:05:18,149 log Forbidden (Permission denied): /V1/full-name-units/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django_ratelimit/decorators.py", line 26, in _wrapped
+    raise (import_string(cls) if isinstance(cls, str) else cls)()
+django_ratelimit.exceptions.Ratelimited
+INFO 2025-05-21 20:05:31,756 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-21 20:05:50,655 log Forbidden (Permission denied): /V1/full-name-units/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django_ratelimit/decorators.py", line 26, in _wrapped
+    raise (import_string(cls) if isinstance(cls, str) else cls)()
+django_ratelimit.exceptions.Ratelimited
+INFO 2025-05-21 20:07:52,105 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-21 20:07:52,539 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-21 20:08:01,306 log Too Many Requests: /V1/full-name-units/
+INFO 2025-05-21 20:08:21,453 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-21 20:08:21,857 autoreload Watching for file changes with StatReloader
+INFO 2025-05-21 20:08:25,149 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-21 20:08:25,556 autoreload Watching for file changes with StatReloader
+INFO 2025-05-21 20:17:37,529 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-21 20:17:37,968 autoreload Watching for file changes with StatReloader
+INFO 2025-05-21 20:17:53,453 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py changed, reloading.
+INFO 2025-05-21 20:17:53,907 autoreload Watching for file changes with StatReloader
+INFO 2025-05-21 20:18:01,140 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/active_ratelimit.py changed, reloading.
+INFO 2025-05-21 20:18:01,566 autoreload Watching for file changes with StatReloader
+INFO 2025-05-21 20:18:12,592 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-21 20:18:41,832 log Too Many Requests: /V1/full-name-units/
+INFO 2025-05-21 20:18:51,727 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/active_ratelimit.py changed, reloading.
+INFO 2025-05-21 20:18:52,153 autoreload Watching for file changes with StatReloader
+INFO 2025-05-21 20:30:49,617 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-21 20:30:50,293 autoreload Watching for file changes with StatReloader
+INFO 2025-05-22 03:16:25,366 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-22 03:16:50,471 log Too Many Requests: /V1/full-name-units/
+INFO 2025-05-22 03:19:10,145 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-22 03:19:10,560 autoreload Watching for file changes with StatReloader
+INFO 2025-05-23 20:51:16,837 autoreload Watching for file changes with StatReloader
+INFO 2025-05-23 20:51:59,714 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-23 20:52:00,168 autoreload Watching for file changes with StatReloader
+INFO 2025-05-24 15:08:06,681 autoreload Watching for file changes with StatReloader
+INFO 2025-05-24 15:08:26,621 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-24 15:08:27,043 autoreload Watching for file changes with StatReloader
+INFO 2025-05-24 15:08:40,429 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views_template.py changed, reloading.
+INFO 2025-05-24 15:08:40,840 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-24 15:09:06,813 log Not Found: /
+WARNING 2025-05-24 15:09:07,194 log Not Found: /favicon.ico
+ERROR 2025-05-24 15:09:16,172 log Internal Server Error: /V1/docs/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/documentation_api.html
+INFO 2025-05-24 15:10:11,305 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views_template.py changed, reloading.
+INFO 2025-05-24 15:10:11,826 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-24 15:10:12,945 log Internal Server Error: /V1/docs/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/docs_api.html
+INFO 2025-05-24 15:10:47,846 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/urls.py changed, reloading.
+INFO 2025-05-24 15:10:48,332 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-24 15:10:51,602 log Internal Server Error: /V1/docs/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/docs_api.html
+INFO 2025-05-24 15:12:14,146 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-24 15:12:14,592 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-24 15:12:17,171 log Internal Server Error: /V1/docs/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/docs_api.html
+INFO 2025-05-24 15:13:00,917 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-24 15:13:03,048 log Internal Server Error: /V1/docs/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/docs_api.html
+WARNING 2025-05-24 15:13:03,214 log Not Found: /favicon.ico
+ERROR 2025-05-24 15:13:07,539 log Internal Server Error: /V1/docs/
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/docs_api.html
+INFO 2025-05-24 15:14:48,209 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views_template.py changed, reloading.
+INFO 2025-05-24 15:14:49,124 autoreload Watching for file changes with StatReloader
+INFO 2025-05-24 18:02:42,944 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-24 18:02:47,443 log Not Found: /V1/docs/
+INFO 2025-05-24 18:03:25,353 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/urls.py changed, reloading.
+INFO 2025-05-24 18:03:25,882 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-24 18:03:26,187 log Not Found: /docs/
+INFO 2025-05-24 18:04:47,801 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/urls.py changed, reloading.
+INFO 2025-05-24 18:04:48,287 autoreload Watching for file changes with StatReloader
+INFO 2025-05-24 18:04:52,611 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/urls.py changed, reloading.
+INFO 2025-05-24 18:04:53,042 autoreload Watching for file changes with StatReloader
+INFO 2025-05-24 18:05:10,678 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-24 18:05:11,095 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-24 18:52:55,917 log Not Found: /V1/all-data/"
+WARNING 2025-05-24 18:53:00,563 log Not Found: /V1/all-data/
+INFO 2025-05-24 19:57:02,583 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-24 19:57:07,193 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-24 20:32:25,395 log Not Found: /V1/full-name-units/
+ERROR 2025-05-24 20:33:10,663 views Error in fullname_wanted_units: 'Unit type "lengt" not found in available data'
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 236, in fullname_wanted_units
+    result = fullname_units_available(units_data, unit_type)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py", line 24, in wrapper
+    return func(units_data, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 254, in fullname_units_available
+    raise KeyError(f'Unit type "{unit_type}" not found in available data')
+KeyError: 'Unit type "lengt" not found in available data'
+ERROR 2025-05-24 20:33:10,682 log Internal Server Error: /v1/full-name-units/
+INFO 2025-05-24 20:54:23,709 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-24 20:54:24,439 autoreload Watching for file changes with StatReloader
+INFO 2025-05-25 00:24:29,741 autoreload Watching for file changes with StatReloader
+INFO 2025-05-25 00:44:37,943 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-25 00:44:38,383 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-25 01:02:19,923 views Error in show_short_description: 'Data'
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 168, in show_short_description
+    result = short_description_unit(units_data, unit_type, unit)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py", line 24, in wrapper
+    return func(units_data, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 182, in short_description_unit
+    return {unit: units_data[unit_type][unit]['description']}
+KeyError: 'Data'
+ERROR 2025-05-25 01:02:20,001 log Internal Server Error: /v1/short-description/
+INFO 2025-05-25 01:03:07,544 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-25 01:03:08,183 autoreload Watching for file changes with StatReloader
+INFO 2025-05-25 01:04:01,631 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-25 01:04:02,019 autoreload Watching for file changes with StatReloader
+INFO 2025-05-25 01:04:14,458 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-25 01:04:15,022 autoreload Watching for file changes with StatReloader
+INFO 2025-05-25 04:09:26,312 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/urls.py changed, reloading.
+INFO 2025-05-25 04:09:27,093 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-25 04:09:52,886 log Not Found: /v1/all-data/
+INFO 2025-05-25 04:11:51,720 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/urls.py changed, reloading.
+INFO 2025-05-25 04:11:52,092 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-25 04:12:54,650 log Not Found: /v1/unit-convert/
+ERROR 2025-05-25 04:13:00,054 views Error in unit_convert: Unit gib or mib not valid in data
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py", line 92, in unit_convert
+    result = units_converter(units_data, value, unit_type.lower(), unit_from.lower(), unit_to.lower())
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/utils/validations.py", line 24, in wrapper
+    return func(units_data, *args, **kwargs)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/logic.py", line 100, in units_converter
+    raise ValueError(f'Unit {unit_from} or {unit_to} not valid in {unit_type}')
+ValueError: Unit gib or mib not valid in data
+ERROR 2025-05-25 04:13:00,113 log Internal Server Error: /v1/unit-convert
+INFO 2025-05-25 04:15:44,705 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-25 04:15:45,092 autoreload Watching for file changes with StatReloader
+INFO 2025-05-25 04:16:39,493 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-25 04:16:39,900 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-25 04:43:17,650 log Not Found: /description-unit
+INFO 2025-05-26 00:51:48,436 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 00:52:13,496 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-26 00:53:04,897 log Not Found: /favicon.ico
+INFO 2025-05-26 01:13:25,291 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-26 01:18:10,483 log Not Found: /favicon.ico
+INFO 2025-05-26 14:03:10,913 autoreload Watching for file changes with StatReloader
+INFO 2025-05-26 14:23:28,682 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-26 14:23:29,050 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-26 14:35:25,304 log Not Found: /favicon.ico
+WARNING 2025-05-26 14:46:10,338 log Not Found: /favicon.ico
+WARNING 2025-05-26 14:46:26,691 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:17:18,078 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:19:07,930 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:21:50,492 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:23:40,726 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:24:23,891 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:26:23,425 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:26:38,518 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:27:34,872 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:28:03,537 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:35:51,976 log Not Found: /favicon.ico
+WARNING 2025-05-26 15:37:40,777 log Not Found: /favicon.ico
+WARNING 2025-05-26 19:14:32,715 log Not Found: /v1/unit-all-data
+WARNING 2025-05-26 19:57:17,264 log Not Found: /favicon.ico
+WARNING 2025-05-26 20:00:45,432 log Not Found: /favicon.ico
+WARNING 2025-05-26 20:03:53,074 log Not Found: /favicon.ico
+WARNING 2025-05-26 20:08:26,102 log Not Found: /favicon.ico
+WARNING 2025-05-26 20:12:00,100 log Not Found: /favicon.ico
+ERROR 2025-05-26 20:22:13,967 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('static', filename='bridgeroad.png')' from 'url_for('static', filename='bridgeroad.png')'
+ERROR 2025-05-26 20:22:24,277 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('static', filename='bridge-road.png')' from 'url_for('static', filename='bridge-road.png')'
+ERROR 2025-05-26 20:23:04,668 log Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/venv/lib/python3.10/site-packages/django/template/base.py", line 710, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('static', filename='logo/bridge-road.png')' from 'url_for('static', filename='logo/bridge-road.png')'
+INFO 2025-05-27 04:14:44,809 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views.py changed, reloading.
+INFO 2025-05-27 04:15:05,342 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 04:16:12,081 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/a_units_converter/views_template.py changed, reloading.
+INFO 2025-05-27 04:16:12,619 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 04:16:58,743 autoreload /home/malaquiazmarcos/PROGRAMACION/python/proyectos/api_django_puro/p_converter/settings.py changed, reloading.
+INFO 2025-05-27 04:16:59,119 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 13:53:07,845 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 13:53:24,110 autoreload Watching for file changes with StatReloader

@@ -1,9 +1,10 @@
-from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
+from django_ratelimit.decorators import ratelimit
 import json
 import logging
 from a_units_converter.logic import *
+from a_units_converter.utils.active_ratelimit import active_ratelimit
 
 logger = logging.getLogger(__name__)
 
@@ -11,7 +12,14 @@ with open("a_units_converter/data/units.json", "r", encoding='utf-8') as data:
     units_data = json.load(data)
 
 @require_http_methods(['GET'])
+@ratelimit(key='ip', rate='10/m', block=False)
+@active_ratelimit
 def unit_convert(request):
+    """
+    Convert units based on user input.
+
+    See the documentation for more details.
+    """
     value = (request.GET.get('value')) 
     unit_type = request.GET.get('unit_type')
     unit_from = request.GET.get('unit_from')
@@ -42,9 +50,9 @@ def unit_convert(request):
 
     try:
         if unit_type == 'temperature':
-            result = temperature_converter(value, unit_type, unit_from, unit_to, units_data)
+            result = temperature_converter(units_data, value, unit_type.lower(), unit_from, unit_to)
         else:
-            result = units_converter(value, unit_type, unit_from, unit_to, units_data)
+            result = units_converter(units_data, value, unit_type.lower(), unit_from, unit_to)
 
         if not result:
             logger.warning('Units data is not available')
@@ -69,7 +77,14 @@ def unit_convert(request):
         )
 
 @require_http_methods(['GET'])
+@ratelimit(key='ip', rate='10/m', block=False)
+@active_ratelimit
 def show_all_data(request):
+    """
+    Show all available unit data from the API.
+
+    See the documentation for more details.
+    """
     try:
         result = all_data(units_data)
 
@@ -89,14 +104,21 @@ def show_all_data(request):
         )
 
 @require_http_methods(['GET'])
+@ratelimit(key='ip', rate='10/m', block=False)
+@active_ratelimit
 def show_units_available(request):
+    """
+    Returns all units available in the API.
+
+    See the documentation for more details.
+    """
     try:
         result = units_available(units_data)
 
         if not result:
             logger.warning('Units available data is not available')
             return JsonResponse(
-                {'error': 'Requested data is not found'}, 
+                {'error': 'Requested data not found'}, 
                 status=404
             )
         return JsonResponse(result, status=200)
@@ -109,12 +131,19 @@ def show_units_available(request):
         )
 
 @require_http_methods(['GET'])
+@ratelimit(key='ip', rate='10/m', block=False)
+@active_ratelimit
 def show_short_description(request):
+    """
+    Returns a short description of one unit requested by the user.
+
+    See the documentation for more details.
+    """
     unit_type = request.GET.get('unit_type')
     unit = request.GET.get('unit')
 
     try: 
-        result = short_description_unit(units_data, unit_type, unit)
+        result = short_description_unit(units_data, unit_type.lower(), unit)
 
         if not result:
             logger.warning('Description data not available')
@@ -132,7 +161,14 @@ def show_short_description(request):
         )          
 
 @require_http_methods(['GET'])
+@ratelimit(key='ip', rate='10/m', block=False)
+@active_ratelimit
 def show_magnitudes(request):
+    """
+    Returns all magnitudes available in the API.
+
+    See the documentation for more details.
+    """
     try: 
         result = magnitudes(units_data)
 
@@ -152,7 +188,14 @@ def show_magnitudes(request):
         )
     
 @require_http_methods(['GET'])
+@ratelimit(key='ip', rate='10/m', block=False)
+@active_ratelimit
 def show_all_fullname(request):
+    """
+    Returns all full names of the units available in the API.
+
+    See the documentation for more details.
+    """
     try:
         result = all_fullname_units_available(units_data)
 
@@ -170,13 +213,20 @@ def show_all_fullname(request):
             {'error': f'Internal server error'}, 
             status=500
         )
-    
+
 @require_http_methods(['GET'])
+@ratelimit(key='ip', rate='10/m', block=False)
+@active_ratelimit
 def fullname_wanted_units(request):
+    """
+    Returns the full name of units for a specific magnitude.
+
+    See the documentation for more details.
+    """
     unit_type = request.GET.get('unit_type')
 
     try:
-        result = fullname_units_available(units_data, unit_type)
+        result = fullname_units_available(units_data, unit_type.lower())
 
         if not result:
             logger.warning('Wanted full name data not available')
@@ -192,17 +242,3 @@ def fullname_wanted_units(request):
             {'error': 'Internal server error'}, 
             status=500
         )
-
-
-
-
-# endpoint for test API
-# curl "http://127.0.0.1:8000/V1/unit-convert/?value=1&unit_type=data&unit_from=GiB&unit_to=MiB"
-# curl "http://127.0.0.1:8000/V1/all-data/"
-# curl "http://127.0.0.1:8000/V1/units-available/"
-# curl "http://127.0.0.1:8000/V1/short-description/?unit_type=data&unit=MB"
-# curl "http://127.0.0.1:8000/V1/magnitudes-available/"
-# curl "http://127.0.0.1:8000/V1/full-name-all-units/"
-# curl "http://127.0.0.1:8000/V1/full-name-units/?unit_type=data"
-
-    

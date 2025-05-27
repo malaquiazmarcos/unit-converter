@@ -1,0 +1,77 @@
+
+.custom-body {
+    padding-top: 70px; 
+    background-color: rgb(206, 206, 206);
+}
+
+.navbar {
+    background-color: #b9b9b9;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: 400 !important; 
+}
+
+.endpoint-card {
+    margin-bottom: 1.5rem;
+}
+
+.code-block {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+}
+
+.card {
+    border: none !important;
+}
+
+.card-body {
+    background-color: #b9b9b9;
+}
+
+/* list of endpoint in table of content */
+.custom-list-ep {
+    list-style: none;
+    padding-left: 0;
+}
+.custom-list-ep .custom-item-ep {
+    background-color: rgb(206, 206, 206);
+    border: none;
+    color: #5e5e5e;
+}
+.custom-list-ep .custom-item-ep:hover {
+    background-color: #bcbcbc;
+    color: #000;
+    text-decoration: none;
+}
+
+/* other li */
+.custom-list .custom-item {
+    background-color: rgb(206, 206, 206);
+}
+
+/* when the click in table of content */
+[id] {
+    scroll-margin-top: 75px;
+}
+
+/* button */
+.custom-btn {
+    background-color: #bcbcbc !important;
+    color: #5e5e5e;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.custom-btn:hover {
+    transform: translateY(-2px);
+}
